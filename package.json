@@ -1,0 +1,39 @@
+{
+  "name": "joi-expo-push-token",
+  "version": "1.0.1",
+  "description": "Expo Push Token validation for Joi",
+  "main": "lib/index.js",
+  "repository": "https://github.com/dolsem/joi-expo-push-token",
+  "bugs": {
+    "url": "https://github.com/dolsem/joi-expo-push-token/issues"
+  },
+  "author": "Denis Semenenko <dols3m@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "expo-server-sdk": "^3.1.0"
+  },
+  "keywords": [
+    "joi",
+    "extension",
+    "expo"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "joi": "^14.3.1"
+  },
+  "scripts": {
+    "test": "node_modules/jest-cli/bin/jest.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "notify": false,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "!__tests__"
+    ]
+  }
+}
